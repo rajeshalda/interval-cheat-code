@@ -1,0 +1,83 @@
+Connected as: Rajesh Alda
+
+--- GLOBAL WORK TYPES ---
+Error fetching global work types: {'personid': '375922', 'status': 'Forbidden', 'code': 403, 'error': {'code': 10, 'message': 'User not authorized to access this information', 'verbose': ["HTTP Method GET isn't available to your user group for accessing collections."]}}
+
+--- PROJECT WORK TYPES ---
+Found 43 project work types
+ID: 21010299, WorkType ID: 678426, Name: India-Architect, Project ID: 1089630
+ID: 17783046, WorkType ID: 306619, Name: India-Customer Support, Project ID: 959242
+ID: 17783047, WorkType ID: 304998, Name: India-Design, Project ID: 959242
+ID: 17824514, WorkType ID: 304998, Name: India-Design, Project ID: 961247
+ID: 21010301, WorkType ID: 304998, Name: India-Design, Project ID: 1089630
+ID: 17783048, WorkType ID: 327235, Name: India-Documentation, Project ID: 959242
+ID: 17824515, WorkType ID: 327235, Name: India-Documentation, Project ID: 961247
+ID: 21010302, WorkType ID: 327235, Name: India-Documentation, Project ID: 1089630
+ID: 17783049, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 959242
+ID: 17824516, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 961247
+ID: 21010303, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 1089630
+ID: 17783050, WorkType ID: 320951, Name: India-Holiday, Project ID: 959242
+ID: 17783051, WorkType ID: 305064, Name: India-Meeting, Project ID: 959242
+ID: 17824518, WorkType ID: 305064, Name: India-Meeting, Project ID: 961247
+ID: 21010305, WorkType ID: 305064, Name: India-Meeting, Project ID: 1089630
+ID: 17783052, WorkType ID: 312066, Name: India-Personal Time, Project ID: 959242
+ID: 17783053, WorkType ID: 305063, Name: India-Project Management, Project ID: 959242
+ID: 17824520, WorkType ID: 305063, Name: India-Project Management, Project ID: 961247
+ID: 17783054, WorkType ID: 305065, Name: India-Quality Assurance, Project ID: 959242
+ID: 21010308, WorkType ID: 305065, Name: India-Quality Assurance, Project ID: 1089630
+ID: 17783055, WorkType ID: 312065, Name: India-Sick Time, Project ID: 959242
+ID: 30297634, WorkType ID: 793320, Name: India - Trainer, Project ID: 313650
+ID: 5558348, WorkType ID: 304997, Name: India-Training, Project ID: 313650
+ID: 17783056, WorkType ID: 304997, Name: India-Training, Project ID: 959242
+ID: 21010310, WorkType ID: 304997, Name: India-Training, Project ID: 1089630
+ID: 17783057, WorkType ID: 327236, Name: India-Troubleshooting, Project ID: 959242
+ID: 21010311, WorkType ID: 327236, Name: India-Troubleshooting, Project ID: 1089630
+ID: 17783058, WorkType ID: 312064, Name: India-Vacation Time, Project ID: 959242
+ID: 17783059, WorkType ID: 304397, Name: US-Admin, Project ID: 959242
+ID: 17783060, WorkType ID: 306620, Name: US-Customer Support, Project ID: 959242
+ID: 17783061, WorkType ID: 304398, Name: US-Design, Project ID: 959242
+ID: 17783062, WorkType ID: 304952, Name: US-Documentation, Project ID: 959242
+ID: 17783063, WorkType ID: 304399, Name: US-Engineering / Development, Project ID: 959242
+ID: 17783064, WorkType ID: 320952, Name: US-Holiday, Project ID: 959242
+ID: 17783065, WorkType ID: 304400, Name: US-Meeting, Project ID: 959242
+ID: 17783066, WorkType ID: 312069, Name: US-Personal Time, Project ID: 959242
+ID: 17783067, WorkType ID: 304401, Name: US-Project Management, Project ID: 959242
+ID: 17783068, WorkType ID: 304402, Name: US-Quality Assurance, Project ID: 959242
+ID: 17783069, WorkType ID: 304403, Name: US-Sales / Biz Dev, Project ID: 959242
+ID: 17783070, WorkType ID: 312068, Name: US-Sick Time, Project ID: 959242
+ID: 17783071, WorkType ID: 304405, Name: US-System Administration, Project ID: 959242
+ID: 17783072, WorkType ID: 304406, Name: US-Travel &amp; Expenses, Project ID: 959242
+ID: 17783073, WorkType ID: 312067, Name: US-Vacation Time, Project ID: 959242
+
+--- WORK TYPES FOR TASK 16474442 ---
+Task: Infra - Meeting Tracker Internal Project
+Project ID: 959242
+Found 28 work types for this project
+ID: 17783046, WorkType ID: 306619, Name: India-Customer Support
+ID: 17783047, WorkType ID: 304998, Name: India-Design
+ID: 17783048, WorkType ID: 327235, Name: India-Documentation
+ID: 17783049, WorkType ID: 304999, Name: India-Engineering / Development
+ID: 17783050, WorkType ID: 320951, Name: India-Holiday
+ID: 17783051, WorkType ID: 305064, Name: India-Meeting
+ID: 17783052, WorkType ID: 312066, Name: India-Personal Time
+ID: 17783053, WorkType ID: 305063, Name: India-Project Management
+ID: 17783054, WorkType ID: 305065, Name: India-Quality Assurance
+ID: 17783055, WorkType ID: 312065, Name: India-Sick Time
+ID: 17783056, WorkType ID: 304997, Name: India-Training
+ID: 17783057, WorkType ID: 327236, Name: India-Troubleshooting
+ID: 17783058, WorkType ID: 312064, Name: India-Vacation Time
+ID: 17783059, WorkType ID: 304397, Name: US-Admin
+ID: 17783060, WorkType ID: 306620, Name: US-Customer Support
+ID: 17783061, WorkType ID: 304398, Name: US-Design
+ID: 17783062, WorkType ID: 304952, Name: US-Documentation
+ID: 17783063, WorkType ID: 304399, Name: US-Engineering / Development
+ID: 17783064, WorkType ID: 320952, Name: US-Holiday
+ID: 17783065, WorkType ID: 304400, Name: US-Meeting
+ID: 17783066, WorkType ID: 312069, Name: US-Personal Time
+ID: 17783067, WorkType ID: 304401, Name: US-Project Management
+ID: 17783068, WorkType ID: 304402, Name: US-Quality Assurance
+ID: 17783069, WorkType ID: 304403, Name: US-Sales / Biz Dev
+ID: 17783070, WorkType ID: 312068, Name: US-Sick Time
+ID: 17783071, WorkType ID: 304405, Name: US-System Administration
+ID: 17783072, WorkType ID: 304406, Name: US-Travel &amp; Expenses
+ID: 17783073, WorkType ID: 312067, Name: US-Vacation Time
