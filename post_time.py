@@ -6,7 +6,7 @@ import argparse
 def main():
     # Parse command line arguments
     parser = argparse.ArgumentParser(description='Post time to an Intervals task')
-    parser.add_argument('--task-id', type=str, default="16474442", help='Task ID (default: 16474442 - Meeting Tracker Internal Project)')
+    parser.add_argument('--task-id', type=str, default="16738168", help='Task ID (default: 16738168 - Meeting Tracker Internal Project)')
     parser.add_argument('--time', type=str, default="1.00", help='Time in decimal hours (default: 1.00)')
     parser.add_argument('--date', type=str, default=datetime.now().strftime("%Y-%m-%d"), help='Date in YYYY-MM-DD format (default: today)')
     parser.add_argument('--description', type=str, default="", help='Description of work (default: empty)')
@@ -14,7 +14,7 @@ def main():
     args = parser.parse_args()
     
     # Your API key
-    api_key = "7ghfnbbbo6s"
+    api_key = "2ee0xsyu0aw"
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)
@@ -65,7 +65,7 @@ def main():
             
             if not india_meeting_id:
                 print("Couldn't find India-Meeting work type. Using default work type ID.")
-                india_meeting_id = "305064"  # Default India-Meeting ID
+                india_meeting_id = "304999"  # Default India-Meeting ID
             
             # Add a method to post time
             def post_time(task_id, person_id, date, time_value, work_type_id, description=None, billable=False):

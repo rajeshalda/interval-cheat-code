@@ -8,10 +8,10 @@ def main():
         task_id = sys.argv[1]
     else:
         # If no task ID was provided, use one from the previous example
-        task_id = "16319794"  # This is the task ID from the Infra Project Preperations project
+        task_id = "16474442"  # This is the task ID from the Infra Project Preperations project
     
     # Your API key
-    api_key = "7ghfnbbbo6s"
+    api_key = "7eeez9mbys6"
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)

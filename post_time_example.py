@@ -4,14 +4,14 @@ from datetime import datetime
 
 def main():
     # Your API key
-    api_key = "7ghfnbbbo6s"
+    api_key = "2ee0xsyu0aw"
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)
     
     # Task and work type details
-    task_id = "16474442"  # Meeting Tracker Internal Project
-    work_type_id = "305064"  # India-Meeting
+    task_id = "16738168"  # Meeting Tracker Internal Project
+    work_type_id = "304999"  # India-Meeting
     
     # Get user information to verify connection
     user_info = api.get_me()

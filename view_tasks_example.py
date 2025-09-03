@@ -3,7 +3,7 @@ import json
 
 def main():
     # Your API key
-    api_key = "7ghfnbbbo6s"
+    api_key = "7nhmcv360j4"
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)
