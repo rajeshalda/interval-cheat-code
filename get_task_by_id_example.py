@@ -8,7 +8,7 @@ def main():
         task_id = sys.argv[1]
     else:
         # If no task ID was provided, use one from the previous example
-        task_id = "16474442"  # This is the task ID from the Infra Project Preperations project
+        task_id = "16474442"  # This is the task ID from the Infra Project Preperations project 16474442
     
     # Your API key
     api_key = "7eeez9mbys6"

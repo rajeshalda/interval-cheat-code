@@ -19,7 +19,7 @@ def main():
         return
     
     # Fixed values
-    API_KEY = "2ee0xsyu0aw"
+    API_KEY = "2qaky15nkwq"
     base_url = "https://api.myintervals.com"
     
     # Get user information to get person ID
