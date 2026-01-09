@@ -1,9 +1,18 @@
-from intervals_api import IntervalsAPI
+import sys
+import os
+# Add parent directory to path to import core module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from core.intervals_api import IntervalsAPI
+from core.config import get_api_key
 import json
 
 def main():
-    # Your API key
-    api_key = "2qaky15nkwq"
+    # Get API key from environment
+    try:
+        api_key = get_api_key()
+    except ValueError as e:
+        print(f"Error: {e}")
+        return
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)
@@ -55,7 +64,7 @@ def main():
         print(f"Error fetching project work types: {project_work_types}")
     
     # Get task-specific work types
-    task_id = "16474442"  # Meeting Tracker Internal Project
+    task_id = "1234567980"  # Meeting Tracker Internal Project
     print(f"\n--- WORK TYPES FOR TASK {task_id} ---")
     task = api.get_task_by_id(task_id)
     

@@ -1152,7 +1152,7 @@ Project: Training
 Status: Closed
 Status: Open
 --------------------------------------------------
-Task ID: 16474442 (Local ID: 5457)
+Task ID: 12345678 (Local ID: 5457)
 Title: Infra - Meeting Tracker Internal Project
 Project: Internal
 Status: Open
@@ -1620,14 +1620,14 @@ You can now use this API wrapper to integrate Intervals with other systems or au
 
 _**User**_
 
-this is our goal Meeting Internal project 16474442
+this is our goal Meeting Internal project 12345678
 
 first we have to test we can post it to this task or not ?
 
-when yu use /task you will get all the details of task in that task list you will get the Meeting Internal project 16474442
+when yu use /task you will get all the details of task in that task list you will get the Meeting Internal project 12345678
 
 {
-            "id": "16474442",
+            "id": "12345678",
             "localid": "5457",
             "queueid": null,
             "assigneeid": "375922,133711,379548",
@@ -1680,7 +1680,7 @@ first focus one to get the India-Meeting id okay
 
 _**Assistant**_
 
-I'll help you find the ID of the "India-Meeting" work type and then test if we can post time to the Meeting Tracker Internal Project task (ID: 16474442).
+I'll help you find the ID of the "India-Meeting" work type and then test if we can post time to the Meeting Tracker Internal Project task (ID: 12345678).
 
 Let's first check the API documentation for the `/projectworktype` endpoint to find the work type ID:
 
@@ -1773,7 +1773,7 @@ Now let's create a script to retrieve the work types and find the "India-Meeting
 +         print(f"Error fetching work types: {work_types}")
 +     
 +     # Now let's check if we can get the specific task
-+     task_id = "16474442"  # Meeting Tracker Internal Project
++     task_id = "12345678"  # Meeting Tracker Internal Project
 +     print(f"\nFetching task with ID: {task_id}...")
 +     task = api.get_task_by_id(task_id)
 +     
@@ -1926,21 +1926,21 @@ Raw API Response:
     {
       "id": "17783048",
       "projectid": "959242",
-      "worktypeid": "327235",
+      "worktypeid": "123456",
       "worktype": "India-Documentation",
       "active": "t"
     },
     {
       "id": "17824515",
       "projectid": "961247",
-      "worktypeid": "327235",
+      "worktypeid": "123456",
       "worktype": "India-Documentation",
       "active": "t"
     },
     {
       "id": "21010302",
       "projectid": "1089630",
-      "worktypeid": "327235",
+      "worktypeid": "123456",
       "worktype": "India-Documentation",
       "active": "t"
     },
@@ -1960,7 +1960,7 @@ Raw API Response:
   ]
 }
 
-Fetching task with ID: 16474442...
+Fetching task with ID: 12345678...
 Successfully retrieved task: Infra - Meeting Tracker Internal Project
 PS C:\Users\Rajesh.alda\Downloads\interval cheat>
 ```
@@ -2056,9 +2056,9 @@ ID: 17783046, WorkType ID: 306619, Name: India-Customer Support, Project ID: 959
 ID: 17783047, WorkType ID: 304998, Name: India-Design, Project ID: 959242
 ID: 17824514, WorkType ID: 304998, Name: India-Design, Project ID: 961247
 ID: 21010301, WorkType ID: 304998, Name: India-Design, Project ID: 1089630
-ID: 17783048, WorkType ID: 327235, Name: India-Documentation, Project ID: 959242
-ID: 17824515, WorkType ID: 327235, Name: India-Documentation, Project ID: 961247
-ID: 21010302, WorkType ID: 327235, Name: India-Documentation, Project ID: 1089630
+ID: 17783048, WorkType ID: 123456, Name: India-Documentation, Project ID: 959242
+ID: 17824515, WorkType ID: 123456, Name: India-Documentation, Project ID: 961247
+ID: 21010302, WorkType ID: 123456, Name: India-Documentation, Project ID: 1089630
 ID: 17783049, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 959242
 ID: 17824516, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 961247
 
@@ -2066,7 +2066,7 @@ Couldn't find a work type with 'India-Meeting' in the name.
 
 Checking for any work type containing 'Meeting':
 
-Fetching task with ID: 16474442...
+Fetching task with ID: 12345678...
 Successfully retrieved task: Infra - Meeting Tracker Internal Project
 
 Fetching work types for project ID: 959242...
@@ -2075,10 +2075,10 @@ Found 28 work types for this project
 Project Work Types:
 ID: 17783046, WorkType ID: 306619, Name: India-Customer Support
 ID: 17783047, WorkType ID: 304998, Name: India-Design
-ID: 17783048, WorkType ID: 327235, Name: India-Documentation
+ID: 17783048, WorkType ID: 123456, Name: India-Documentation
 ID: 17783049, WorkType ID: 304999, Name: India-Engineering / Development
 ID: 17783050, WorkType ID: 320951, Name: India-Holiday
-ID: 17783051, WorkType ID: 305064, Name: India-Meeting
+ID: 17783051, WorkType ID: 123456, Name: India-Meeting
 ID: 17783052, WorkType ID: 312066, Name: India-Personal Time
 ID: 17783053, WorkType ID: 305063, Name: India-Project Management
 ID: 17783054, WorkType ID: 305065, Name: India-Quality Assurance
@@ -2090,7 +2090,7 @@ PS C:\Users\Rajesh.alda\Downloads\interval cheat>
 
 Great! We found the "India-Meeting" work type for the project. Here are the details:
 
-- Work Type ID: 305064
+- Work Type ID: 123456
 - Project Work Type ID: 17783051
 - Name: India-Meeting
 - Project ID: 959242 (which matches the project ID of the task we're interested in)
@@ -2113,8 +2113,8 @@ Now let's create a script to test if we can post time to the Meeting Tracker Int
 +     api = IntervalsAPI(api_key)
 +     
 +     # Task and work type details
-+     task_id = "16474442"  # Meeting Tracker Internal Project
-+     work_type_id = "305064"  # India-Meeting
++     task_id = "12345678"  # Meeting Tracker Internal Project
++     work_type_id = "123456"  # India-Meeting
 +     
 +     # Get user information to verify connection
 +     user_info = api.get_me()
@@ -2215,13 +2215,13 @@ python post_time_example.py
 ```
 PS C:\Users\Rajesh.alda\Downloads\interval cheat> python post_time_example.py
 Connected as: Rajesh Alda
-Fetching task with ID: 16474442...
+Fetching task with ID: 12345678...
 Task: Infra - Meeting Tracker Internal Project
 Project: Internal
 Client: Nathcorp
 Module: Deployment
 
-Posting time to task 16474442...
+Posting time to task 12345678...
 Date: 2025-03-11
 Time: 1:00
 Description: Testing API time entry
@@ -2234,7 +2234,7 @@ Found 0 existing time entries for this task.
 Attempting to post time...
 Error posting time: {'personid': '375922', 'status': 'Bad Request', 'code': 400, 'error': {'code': 18, 'm
 essage': 'Validation error has occurred (missing required field/parameter, or bad field/parameter)', 'ver
-bose': ['Validation failed for the value (16474442) passed to the following field: taskid', 'There was a 
+bose': ['Validation failed for the value (12345678) passed to the following field: taskid', 'There was a 
 problem with project permissions. Make sure that every person associated with this resource has access to
  the value of this field.', 'The person specified does not have access to the task this time entry belong
 s to.', 'Please consult the API documentation at http://myintervals.com/api for more information or email
@@ -2250,7 +2250,7 @@ Full Error Response:
     "message": "Validation error has occurred (missing required field/parameter, or bad field/parameter)"
 ,
     "verbose": [
-      "Validation failed for the value (16474442) passed to the following field: taskid",
+      "Validation failed for the value (12345678) passed to the following field: taskid",
       "There was a problem with project permissions. Make sure that every person associated with this res
 ource has access to the value of this field.",
       "The person specified does not have access to the task this time entry belongs to.",
@@ -2466,16 +2466,16 @@ python post_time_example.py
 PS C:\Users\Rajesh.alda\Downloads\interval cheat> python post_time_example.py
 Connected as: Rajesh Alda (ID: 375922)
 
-Fetching task with ID: 16474442...
+Fetching task with ID: 12345678...
 Task: Infra - Meeting Tracker Internal Project
 Project: Internal
 Client: Nathcorp
 Module: Deployment
 
-Posting time to task 16474442...
+Posting time to task 12345678...
 Date: 2025-03-11
 Time: 1.00
-Work Type ID: 305064
+Work Type ID: 123456
 Description: Testing API time entry
 Billable: False
 
@@ -2485,7 +2485,7 @@ Found 0 existing time entries for this task.
 
 Attempting to post time...
 Error posting time: {'personid': 375922, 'status': 'Created', 'code': 201, 'time': {'id': '106771433', 'p
-rojectid': '959242', 'moduleid': '199981', 'taskid': '16474442', 'worktypeid': '305064', 'personid': '375
+rojectid': '959242', 'moduleid': '199981', 'taskid': '12345678', 'worktypeid': '123456', 'personid': '375
 922', 'date': '2025-03-11', 'datemodified': '2025-03-11 05:33:08', 'time': '1', 'description': 'Testing A
 PI time entry', 'billable': 'f', 'worktype': 'India-Meeting', 'milestoneid': None, 'ogmilestoneid': None,
  'module': 'Deployment'}}
@@ -2499,8 +2499,8 @@ Full Error Response:
     "id": "106771433",
     "projectid": "959242",
     "moduleid": "199981",
-    "taskid": "16474442",
-    "worktypeid": "305064",
+    "taskid": "12345678",
+    "worktypeid": "123456",
     "personid": "375922",
     "date": "2025-03-11",
     "datemodified": "2025-03-11 05:33:08",
@@ -2533,7 +2533,7 @@ Let's create a final version of the script that correctly handles the 201 status
 + def main():
 +     # Parse command line arguments
 +     parser = argparse.ArgumentParser(description='Post time to an Intervals task')
-+     parser.add_argument('--task-id', type=str, default="16474442", help='Task ID (default: 16474442 - Meeting Tracker Internal Project)')
++     parser.add_argument('--task-id', type=str, default="12345678", help='Task ID (default: 12345678 - Meeting Tracker Internal Project)')
 +     parser.add_argument('--time', type=str, default="1.00", help='Time in decimal hours (default: 1.00)')
 +     parser.add_argument('--date', type=str, default=datetime.now().strftime("%Y-%m-%d"), help='Date in YYYY-MM-DD format (default: today)')
 +     parser.add_argument('--description', type=str, default="", help='Description of work (default: empty)')
@@ -2592,7 +2592,7 @@ Let's create a final version of the script that correctly handles the 201 status
 +             
 +             if not india_meeting_id:
 +                 print("Couldn't find India-Meeting work type. Using default work type ID.")
-+                 india_meeting_id = "305064"  # Default India-Meeting ID
++                 india_meeting_id = "123456"  # Default India-Meeting ID
 +             
 +             # Add a method to post time
 +             def post_time(task_id, person_id, date, time_value, work_type_id, description=None, billable=False):
@@ -2666,18 +2666,18 @@ PS C:\Users\Rajesh.alda\Downloads\interval cheat> python post_time.py --descript
  discuss project progress"
 Connected as: Rajesh Alda (ID: 375922)
 
-Fetching task with ID: 16474442...
+Fetching task with ID: 12345678...
 Task: Infra - Meeting Tracker Internal Project
 Project: Internal
 Module: Deployment
 
 Fetching work types for project ID: 959242...
-Found India-Meeting work type! ID: 305064
+Found India-Meeting work type! ID: 123456
 
-Posting time to task 16474442...
+Posting time to task 12345678...
 Date: 2025-03-11
 Time: 1.00
-Work Type: India-Meeting (ID: 305064)
+Work Type: India-Meeting (ID: 123456)
 Description: Meeting with team to discuss project progress
 Billable: False
 
@@ -2814,7 +2814,7 @@ Let's create a README file to document how to use the scripts:
 + 
 + #### Options
 + 
-+ - `--task-id`: Task ID (default: 16474442 - Meeting Tracker Internal Project)
++ - `--task-id`: Task ID (default: 12345678 - Meeting Tracker Internal Project)
 + - `--time`: Time in decimal hours (default: 1.00)
 + - `--date`: Date in YYYY-MM-DD format (default: today)
 + - `--description`: Description of work (default: empty)
@@ -2850,11 +2850,11 @@ Let's create a README file to document how to use the scripts:
 + 
 + # Post time to a task
 + response = api.create_time(
-+     task_id="16474442",  # Meeting Tracker Internal Project
++     task_id="12345678",  # Meeting Tracker Internal Project
 +     person_id=person_id,
 +     date="2025-03-11",
 +     time_value="1.00",
-+     work_type_id="305064",  # India-Meeting
++     work_type_id="123456",  # India-Meeting
 +     description="Meeting with team",
 +     billable=False
 + )
@@ -2875,8 +2875,8 @@ Let's create a README file to document how to use the scripts:
 + 
 + ## Important IDs
 + 
-+ - Task ID for Meeting Tracker Internal Project: 16474442
-+ - Work Type ID for India-Meeting: 305064
++ - Task ID for Meeting Tracker Internal Project: 12345678
++ - Work Type ID for India-Meeting: 123456
 + - Project ID for Internal: 959242
 + 
 + ## Notes
@@ -2918,8 +2918,8 @@ Let me try to create a simple script that can be used to post time directly from
 +     
 +     # Fixed values
 +     API_KEY = "7ghfnbbbo6s"
-+     TASK_ID = "16474442"  # Meeting Tracker Internal Project
-+     WORK_TYPE_ID = "305064"  # India-Meeting
++     TASK_ID = "12345678"  # Meeting Tracker Internal Project
++     WORK_TYPE_ID = "123456"  # India-Meeting
 +     
 +     # API endpoint
 +     base_url = "https://api.myintervals.com"
@@ -3035,8 +3035,8 @@ Let me summarize what I understand from your request:
 3. **Current Setup**:
    - You have a working `post_meeting_time.py` script that can post individual time entries
    - The script uses the Intervals API with your API key
-   - It's currently set up to post to the Meeting Tracker Internal Project (Task ID: 16474442)
-   - It uses the India-Meeting work type (ID: 305064)
+   - It's currently set up to post to the Meeting Tracker Internal Project (Task ID: 12345678)
+   - It uses the India-Meeting work type (ID: 123456)
 
 4. **What You Want to Achieve**:
    - Instead of manually posting one entry at a time
@@ -3088,8 +3088,8 @@ I'll explain how we can extract and structure the information from project-progr
 
 5. **Required Intervals Parameters**:
    For each post, we'll need:
-   - Task ID: 16474442 (Meeting Tracker Internal Project)
-   - Work Type ID: 305064 (India-Meeting)
+   - Task ID: 12345678 (Meeting Tracker Internal Project)
+   - Work Type ID: 123456 (India-Meeting)
    - Time: "8.00" (8 hours)
    - Date: YYYY-MM-DD format for each day
    - Description: Combined tasks from that day
@@ -3114,8 +3114,8 @@ Instead of "8.00", we'll use "8" for the time value. This makes it simpler and c
 So for each day's entry to Intervals, the data will look like:
 
 1. **Fixed Values (same for all entries)**:
-   - Task ID: 16474442 (Meeting Tracker Internal Project)
-   - Work Type ID: 305064 (India-Meeting)
+   - Task ID: 12345678 (Meeting Tracker Internal Project)
+   - Work Type ID: 123456 (India-Meeting)
    - Time: "8" (not "8.00")
    - Billable: false
 
@@ -3147,8 +3147,8 @@ For Day 1, we'll post:
    - Date: 2024-01-01
    - Time: "8"
    - Description: "Set up initial project structure with Next.js and TypeScript configuration; Implemented basic authentication setup with NextAuth.js"
-   - Task ID: 16474442
-   - Work Type ID: 305064
+   - Task ID: 12345678
+   - Work Type ID: 123456
    - Billable: false
 
 This test will help us verify:
@@ -3431,10 +3431,10 @@ Traceback (most recent call last):
 n encode
 Connected as: Rajesh Alda (ID: 375922)
 
-Posting time to Meeting Tracker Internal Project (ID: 16474442)...
+Posting time to Meeting Tracker Internal Project (ID: 12345678)...
 Date: 2025-01-01
 Time: 8
-Work Type: India-Meeting (ID: 305064)
+Work Type: India-Meeting (ID: 123456)
 Description: Day 1: Set up project structure and auth
 Billable: False
     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
@@ -3482,10 +3482,10 @@ python post_meeting_time.py --date 2025-01-01 --time 8 --description "Set up ini
 ```
 Connected as: Rajesh Alda (ID: 375922)
 
-Posting time to Meeting Tracker Internal Project (ID: 16474442)...
+Posting time to Meeting Tracker Internal Project (ID: 12345678)...
 Date: 2025-01-01
 Time: 8
-Work Type: India-Meeting (ID: 305064)
+Work Type: India-Meeting (ID: 123456)
 Description: Set up initial project structure with Next.js and TypeScript configuration; Implemented basic authentication setup with N
 extAuth.js
 Billable: False
@@ -3574,8 +3574,8 @@ First, let me create a JSON file to store all the time entries from project-prog
 ```diff
 - 
 + {
-+     "task_id": "16474442",
-+     "work_type_id": "305064",
++     "task_id": "12345678",
++     "work_type_id": "123456",
 +     "time": "8",
 +     "billable": false,
 +     "entries": [
@@ -3600,8 +3600,8 @@ First, let me create a JSON file to store all the time entries from project-prog
 I've created a sample JSON file with the first 3 days. Let me explain the structure:
 
 1. **Fixed Values** (top level):
-   - `task_id`: "16474442" (Meeting Tracker Internal Project)
-   - `work_type_id`: "305064" (India-Meeting)
+   - `task_id`: "12345678" (Meeting Tracker Internal Project)
+   - `work_type_id`: "123456" (India-Meeting)
    - `time`: "8" (8 hours per day)
    - `billable`: false
 
@@ -3661,8 +3661,8 @@ I'll modify the post_meeting_time.py script to read from the JSON file instead o
       
       # Fixed values
       API_KEY = "7ghfnbbbo6s"
--     TASK_ID = "16474442"  # Meeting Tracker Internal Project
--     WORK_TYPE_ID = "305064"  # India-Meeting
+-     TASK_ID = "12345678"  # Meeting Tracker Internal Project
+-     WORK_TYPE_ID = "123456"  # India-Meeting
 -     
 -     # API endpoint
       base_url = "https://api.myintervals.com"
@@ -4051,8 +4051,8 @@ I'll create a README.md file with setup instructions and usage information for y
 +    - Structure:
 +    ```json
 +    {
-+        "task_id": "16474442",
-+        "work_type_id": "305064",
++        "task_id": "12345678",
++        "work_type_id": "123456",
 +        "time": "8",
 +        "billable": false,
 +        "entries": [
@@ -4083,8 +4083,8 @@ I'll create a README.md file with setup instructions and usage information for y
 + ## Important Notes
 + 
 + - The script uses a predefined API key
-+ - Task ID 16474442 is for "Meeting Tracker Internal Project"
-+ - Work Type ID 305064 is for "India-Meeting"
++ - Task ID 12345678 is for "Meeting Tracker Internal Project"
++ - Work Type ID 123456 is for "India-Meeting"
 + - Each entry will be posted with 8 hours
 + - Dates should be in YYYY-MM-DD format
 + - The script will stop if any entry fails to post

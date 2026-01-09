@@ -1,17 +1,26 @@
-from intervals_api import IntervalsAPI
+import sys
+import os
+# Add parent directory to path to import core module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from core.intervals_api import IntervalsAPI
+from core.config import get_api_key
 import json
 from datetime import datetime
 
 def main():
-    # Your API key
-    api_key = "2ee0xsyu0aw"
+    # Get API key from environment
+    try:
+        api_key = get_api_key()
+    except ValueError as e:
+        print(f"Error: {e}")
+        return
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)
     
     # Task and work type details
-    task_id = "16738168"  # Meeting Tracker Internal Project
-    work_type_id = "304999"  # India-Meeting
+    task_id = "12346789"  # Meeting Tracker Internal Project
+    work_type_id = "123456789"  # India-Meeting
     
     # Get user information to verify connection
     user_info = api.get_me()

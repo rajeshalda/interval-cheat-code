@@ -2,14 +2,23 @@
 """
 Simple script to post time to the Meeting Tracker Internal Project task.
 """
+import sys
+import os
+# Add parent directory to path to import core module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from core.config import get_api_key
 import requests
 import json
 from datetime import datetime
 
 def main():
     # Read the time entries from JSON file
+    # Look for it in the data directory
+    data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+    time_entries_path = os.path.join(data_dir, 'time_entries.json')
+
     try:
-        with open('time_entries.json', 'r') as f:
+        with open(time_entries_path, 'r') as f:
             time_entries = json.load(f)
     except FileNotFoundError:
         print("Error: time_entries.json file not found!")
@@ -17,9 +26,14 @@ def main():
     except json.JSONDecodeError:
         print("Error: Invalid JSON format in time_entries.json!")
         return
-    
-    # Fixed values
-    API_KEY = "2qaky15nkwq"
+
+    # Get API key from environment
+    try:
+        API_KEY = get_api_key()
+    except ValueError as e:
+        print(f"Error: {e}")
+        return
+
     base_url = "https://api.myintervals.com"
     
     # Get user information to get person ID

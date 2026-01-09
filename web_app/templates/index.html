@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Cheat Code</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interval Cheat Code</h1>
+            <p class="version">v0.1</p>
+            {% if user_message %}
+                <p class="user-info">{{ user_message }}</p>
+            {% endif %}
+            <p class="credit">Credit: Rajesh Alda</p>
+            {% if error %}
+                <div class="error-banner">
+                    <strong>Error:</strong> {{ error }}
+                    <p>Please check your .env file configuration.</p>
+                </div>
+            {% endif %}
+        </header>
+
+        {% if not error %}
+        <main>
+            <div class="controls">
+                <button id="addEntryBtn" class="btn btn-primary">+ Add Entry</button>
+                <button id="importJsonBtn" class="btn btn-secondary">Import JSON</button>
+            </div>
+
+            <div id="entriesContainer">
+                <!-- Entries will be added here dynamically -->
+            </div>
+
+            <div class="actions">
+                <button id="previewBtn" class="btn btn-secondary">Preview</button>
+                <button id="submitBtn" class="btn btn-success">Submit All Entries</button>
+            </div>
+
+            <!-- Preview Modal -->
+            <div id="previewModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Preview Entries</h2>
+                    <div id="previewContent"></div>
+                    <div class="modal-actions">
+                        <button id="confirmSubmitBtn" class="btn btn-success">Confirm & Submit</button>
+                        <button class="btn btn-secondary close-modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Modal -->
+            <div id="resultsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Submission Results</h2>
+                    <div id="resultsContent"></div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary close-modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Import JSON Modal -->
+            <div id="importModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Import from JSON</h2>
+                    <p>Paste your JSON data below:</p>
+                    <textarea id="jsonInput" rows="10" placeholder='{"entries": [{"date": "2026-01-09", "description": "Work done", "time": "4", "work_type": "India-Engineering"}]}'></textarea>
+                    <div class="modal-actions">
+                        <button id="confirmImportBtn" class="btn btn-success">Import</button>
+                        <button class="btn btn-secondary close-modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

@@ -129,7 +129,7 @@ class IntervalsAPI:
 
 if __name__ == "__main__":
     # Your API key
-    api_key = "7ghfnbbbo6s"
+    api_key = "123456789"  # Replace with your actual API key
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)

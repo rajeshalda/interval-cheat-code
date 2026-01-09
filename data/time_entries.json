@@ -1,0 +1,27 @@
+  {
+    "task_id": "12345678",
+    "work_type_id": "123456",
+    "work_type": "India-Meeting",
+    "time": "8",
+    "billable": false,
+    "entries": [
+      {
+        "date": "2026-01-09",
+        "description": "Daily standup meeting"
+      },
+      {
+        "date": "2026-01-09",
+        "description": "Code review session",
+        "time": "2",
+        "work_type": "India-Engineering"
+      },
+      {
+        "date": "2026-01-10",
+        "description": "Documentation update",
+        "time": "4",
+        "work_type_id": "123456",
+        "task_id": "12345678",
+        "billable": true
+      }
+    ]
+  }

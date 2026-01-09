@@ -1,6 +1,10 @@
-from intervals_api import IntervalsAPI
-import json
 import sys
+import os
+# Add parent directory to path to import core module
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from core.intervals_api import IntervalsAPI
+from core.config import get_api_key, get_default_task_id
+import json
 
 def main():
     # Check if a task ID was provided as a command-line argument
@@ -8,10 +12,14 @@ def main():
         task_id = sys.argv[1]
     else:
         # If no task ID was provided, use one from the previous example
-        task_id = "16474442"  # This is the task ID from the Infra Project Preperations project 16474442
-    
-    # Your API key
-    api_key = "7eeez9mbys6"
+        task_id = get_default_task_id()
+
+    # Get API key from environment
+    try:
+        api_key = get_api_key()
+    except ValueError as e:
+        print(f"Error: {e}")
+        return
     
     # Create an instance of the IntervalsAPI class
     api = IntervalsAPI(api_key)

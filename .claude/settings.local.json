@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\Rajesh.alda\\\\Downloads\\\\interval cheat\" log --oneline -10)",
+      "Bash(tree:*)",
+      "Bash(python:*)",
+      "Bash(test:*)",
+      "Bash(pip install:*)"
+    ]
+  }
+}

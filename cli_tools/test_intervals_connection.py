@@ -3,7 +3,7 @@ import base64
 import json
 
 # API credentials
-api_key = "7ghfnbbbo6s"
+api_key = "7sbvbvsvskn"  # Replace with your actual API key
 
 # API endpoint
 base_url = "https://api.myintervals.com"

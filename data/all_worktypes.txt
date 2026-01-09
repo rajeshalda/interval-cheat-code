@@ -10,16 +10,16 @@ ID: 17783046, WorkType ID: 306619, Name: India-Customer Support, Project ID: 959
 ID: 17783047, WorkType ID: 304998, Name: India-Design, Project ID: 959242
 ID: 17824514, WorkType ID: 304998, Name: India-Design, Project ID: 961247
 ID: 21010301, WorkType ID: 304998, Name: India-Design, Project ID: 1089630
-ID: 17783048, WorkType ID: 327235, Name: India-Documentation, Project ID: 959242
-ID: 17824515, WorkType ID: 327235, Name: India-Documentation, Project ID: 961247
-ID: 21010302, WorkType ID: 327235, Name: India-Documentation, Project ID: 1089630
+ID: 17783048, WorkType ID: 123456, Name: India-Documentation, Project ID: 959242
+ID: 17824515, WorkType ID: 123456, Name: India-Documentation, Project ID: 961247
+ID: 21010302, WorkType ID: 123456, Name: India-Documentation, Project ID: 1089630
 ID: 17783049, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 959242
 ID: 17824516, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 961247
 ID: 21010303, WorkType ID: 304999, Name: India-Engineering / Development, Project ID: 1089630
 ID: 17783050, WorkType ID: 320951, Name: India-Holiday, Project ID: 959242
-ID: 17783051, WorkType ID: 305064, Name: India-Meeting, Project ID: 959242
-ID: 17824518, WorkType ID: 305064, Name: India-Meeting, Project ID: 961247
-ID: 21010305, WorkType ID: 305064, Name: India-Meeting, Project ID: 1089630
+ID: 17783051, WorkType ID: 123456, Name: India-Meeting, Project ID: 959242
+ID: 17824518, WorkType ID: 123456, Name: India-Meeting, Project ID: 961247
+ID: 21010305, WorkType ID: 123456, Name: India-Meeting, Project ID: 1089630
 ID: 17783052, WorkType ID: 312066, Name: India-Personal Time, Project ID: 959242
 ID: 17783053, WorkType ID: 305063, Name: India-Project Management, Project ID: 959242
 ID: 17824520, WorkType ID: 305063, Name: India-Project Management, Project ID: 961247
@@ -49,16 +49,16 @@ ID: 17783071, WorkType ID: 304405, Name: US-System Administration, Project ID: 9
 ID: 17783072, WorkType ID: 304406, Name: US-Travel &amp; Expenses, Project ID: 959242
 ID: 17783073, WorkType ID: 312067, Name: US-Vacation Time, Project ID: 959242
 
---- WORK TYPES FOR TASK 16474442 ---
+--- WORK TYPES FOR TASK 12345678 ---
 Task: Infra - Meeting Tracker Internal Project
 Project ID: 959242
 Found 28 work types for this project
 ID: 17783046, WorkType ID: 306619, Name: India-Customer Support
 ID: 17783047, WorkType ID: 304998, Name: India-Design
-ID: 17783048, WorkType ID: 327235, Name: India-Documentation
+ID: 17783048, WorkType ID: 123456, Name: India-Documentation
 ID: 17783049, WorkType ID: 304999, Name: India-Engineering / Development
 ID: 17783050, WorkType ID: 320951, Name: India-Holiday
-ID: 17783051, WorkType ID: 305064, Name: India-Meeting
+ID: 17783051, WorkType ID: 123456, Name: India-Meeting
 ID: 17783052, WorkType ID: 312066, Name: India-Personal Time
 ID: 17783053, WorkType ID: 305063, Name: India-Project Management
 ID: 17783054, WorkType ID: 305065, Name: India-Quality Assurance

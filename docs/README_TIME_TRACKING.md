@@ -25,7 +25,7 @@ python post_time.py [options]
 
 #### Options
 
-- `--task-id`: Task ID (default: 16474442 - Meeting Tracker Internal Project)
+- `--task-id`: Task ID (default: 12345678 - Meeting Tracker Internal Project)
 - `--time`: Time in decimal hours (default: 1.00)
 - `--date`: Date in YYYY-MM-DD format (default: today)
 - `--description`: Description of work (default: empty)
@@ -61,11 +61,11 @@ person_id = user_info['me'][0]['id']
 
 # Post time to a task
 response = api.create_time(
-    task_id="16474442",  # Meeting Tracker Internal Project
+    task_id="12345678",  # Meeting Tracker Internal Project
     person_id=person_id,
     date="2025-03-11",
     time_value="1.00",
-    work_type_id="305064",  # India-Meeting
+    work_type_id="123456",  # India-Meeting
     description="Meeting with team",
     billable=False
 )
@@ -86,8 +86,8 @@ else:
 
 ## Important IDs
 
-- Task ID for Meeting Tracker Internal Project: 16474442
-- Work Type ID for India-Meeting: 305064
+- Task ID for Meeting Tracker Internal Project: 12345678
+- Work Type ID for India-Meeting: 123456
 - Project ID for Internal: 959242
 
 ## Notes
